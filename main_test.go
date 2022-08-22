@@ -215,6 +215,7 @@ func TestUpdateProduct(t *testing.T) {
 		fmt.Printf(" %T, %T, %T ", originalProduct["price"], m["price"], m["price"])
 		t.Errorf("Expected the price to change from '%v' to '%v'. Got '%v'", originalProduct["price"], m["price"], m["price"])
 	}
+
 }
 
 func TestDeleteProduct(t *testing.T) {
